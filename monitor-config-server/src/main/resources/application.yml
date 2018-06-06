@@ -1,0 +1,12 @@
+server:
+  port: 8900
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Dylandelon/config-repo.git
+          search-paths: sale-repo
+      label: v1.0
+  application:
+    name: monitor-config-server
